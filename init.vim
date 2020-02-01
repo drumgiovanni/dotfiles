@@ -87,6 +87,8 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'Townk/vim-autoclose'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
 "--------------
 "plugin個別設定
 "--------------

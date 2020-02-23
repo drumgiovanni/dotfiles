@@ -59,14 +59,10 @@ if has('multi_byte_ime')
 endif
 " python3の場所
 let g:python3_host_prog = '/usr/bin/python3'
-" バッファ作成
-nnoremap <C-n> <ESC>:enew<CR>
 " タブ作成
 nnoremap <C-t> <ESC>:tabnew<CR>
 " 保存
 nnoremap <C-s> <ESC>:w<CR>
-" ファイル閉じ
-nnoremap <C-w> <ESC>:wq<CR>
 
 "-----------------------------------
 " plugin関連の設定（vim-plug）を利用
@@ -94,7 +90,7 @@ call plug#end()
 "--------------
 " ■NerdTree
 " キーマッピング
-nnoremap <C-f> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 " NERDTree以外のバッファが閉じられた際にvimを閉じる
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "
